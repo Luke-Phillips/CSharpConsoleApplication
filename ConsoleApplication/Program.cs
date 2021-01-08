@@ -22,8 +22,7 @@ namespace ConsoleApplication
             DateTime christmas = new DateTime(year, 12, 25, 0, 0, 0);
             int daysTilChristmas2021 = (christmas - currentDate).Days;
 
-            // this is for fun, wanted to see if C# had ternary operator
-            
+            // wanted to play with the ternary operator
             bool isDecember = daysTilChristmas2021 <= 25;
             bool isAtLeastOneDay = daysTilChristmas2021 > 1;
             string adverb = isDecember ? "only" : "still";
@@ -32,6 +31,7 @@ namespace ConsoleApplication
             string nounPlurality = isAtLeastOneDay ? "s" : "";     
             Console.WriteLine($"There {verbPlurality} {adverb} {daysTilChristmas2021} day{nounPlurality} until Christmas! {emote}");
 
+            // from "C# Programming Yellow Book" by Rob Miles. WriteLines added.
             double width, height, woodLength, glassArea;
             string widthString, heightString;
             Console.WriteLine("Width of window: ");
